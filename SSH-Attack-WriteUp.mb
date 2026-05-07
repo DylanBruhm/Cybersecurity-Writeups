@@ -6,4 +6,4 @@ Investigated suspicious SSH login attempts through a SIEM dashboard simulation o
 ## Findings
 Detected repeated SSH login attempts targeting port 22 from a suspicious external IP address.
 
-![Suspicious SSH Login Example](SusSSHLoginEx.png)
+![alt text](image-link)
