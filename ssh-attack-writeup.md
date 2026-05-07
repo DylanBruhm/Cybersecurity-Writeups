@@ -5,5 +5,10 @@ Investigated suspicious SSH login attempts through a SIEM dashboard simulation o
 
 ## Findings
 Detected repeated SSH login attempts targeting port 22 from a suspicious external IP address.
+<img width="978" height="936" alt="SusSSHLoginEx" src="https://github.com/user-attachments/assets/435ea289-1983-4c6f-9e77-28e91d49d866" />
 
-![Suspicious SSH Login Example](https://raw.githubusercontent.com/DylanBruhm/Cybersecurity-Writeups/925422c62fc0673daf955e2fd4b9c778df04b7d3/SusSSHLoginEx.png)
+Investigated the IP address and found it was associated with multiple known cyber attacks.
+<img width="1003" height="947" alt="IPSearch" src="https://github.com/user-attachments/assets/9fcc2bef-9631-4a2d-a18e-ab8424ca28a1" />
+
+Escalated the incident to the SOC team lead and blocked the IP address on the firewall due to repeated SSH login attempts and known malicious activity.
+<img width="988" height="820" alt="blockedFirewall" src="https://github.com/user-attachments/assets/9c76edda-2d9a-447f-83ce-57b19ee4d9a1" />
