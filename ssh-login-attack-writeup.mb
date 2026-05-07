@@ -14,4 +14,4 @@ Investigated the IP address and found it was associated with multiple known cybe
 
 Escalated the incident to the SOC team lead and blocked the IP address on the firewall due to repeated SHH login attempts and known malicious activity
 
-<img width="988" height="820" alt="blockedFirewall" src="https://github.com/user-attachments/assets/9b7c273c-fa89-4422-97c6-94c3274f42f9" />
+<img width="988" height="820" alt="blockedFirewall" src="https://github.com/user-attachments/assets/9b7c273c-fa89-4422-97c6-94c3274f42f9" /> 
