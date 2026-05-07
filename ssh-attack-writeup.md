@@ -5,7 +5,7 @@ Investigated suspicious SSH login attempts through a SIEM dashboard simulation o
 
 ## Findings
 Detected repeated SSH login attempts targeting port 22 from a suspicious external IP address. 
-Investigated the IP address and there known suspicious activity, originating from an external IP located in China.
+Investigated the IP address and there is known suspicious activity, originating from an external IP located in China.
 Escalated the incident to the SOC team lead and blocked the IP address on the firewall for repeated SSH login attempts and known malicious activity.
 <img width="978" height="936" alt="SusSSHLoginEx" src="https://github.com/user-attachments/assets/435ea289-1983-4c6f-9e77-28e91d49d866" />
 
