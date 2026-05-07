@@ -1,0 +1,14 @@
+# SOC Level 1 Write-Up
+
+## Overview
+Investigated suspicious SSH login attempts through a SIEM dashboard simulation on tryandhackme.
+
+## Findings
+Detected repeated SSH login attempts targeting port 22 from a suspicious external IP address.
+<img width="978" height="936" alt="SusSSHLoginEx" src="https://github.com/user-attachments/assets/4675cb69-bd3c-4bb9-bb87-918315c8f5c4" />
+
+Investigated the IP address and found it was associated with multiple known cyber attacks.
+<img width="1003" height="947" alt="IPSearch" src="https://github.com/user-attachments/assets/46d9d275-18e2-4f20-9410-38a31f48b719" />
+
+Escalated the incident to the SOC team lead and blocked the IP address on the firewall due to repeated SHH login attempts and known malicious activity
+<img width="988" height="820" alt="blockedFirewall" src="https://github.com/user-attachments/assets/9b7c273c-fa89-4422-97c6-94c3274f42f9" />
