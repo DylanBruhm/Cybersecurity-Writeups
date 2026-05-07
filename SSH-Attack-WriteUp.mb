@@ -1,1 +1,9 @@
-![SusSSHLoginEx](https://github.com/user-attachments/assets/4675cb69-bd3c-4bb9-bb87-918315c8f5c4)
+# SOC Level 1 Write-Up
+
+## Overview
+Investigated suspicious SSH login attempts through a SIEM dashboard simulation on TryHackMe.
+
+## Findings
+Detected repeated SSH login attempts targeting port 22 from a suspicious external IP address.
+
+https://github.com/DylanBruhm/Cybersecurity-Writeups/blob/5a2b6c3c69ec6f1d108e1c1430a49e9b81be7f37/SusSSHLoginEx.png
