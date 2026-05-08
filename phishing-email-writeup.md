@@ -1,4 +1,4 @@
-# phishing-email-writeup
+# Phishing-Email-Write-Up
 
 ## Overview
 
