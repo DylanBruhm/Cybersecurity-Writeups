@@ -1,4 +1,4 @@
-# SOC SSH attack Write-Up
+# SOC SSH Attack Write-Up
 
 ## Overview
 Investigated suspicious SSH login attempts through a SIEM dashboard simulation on TryHackMe.
