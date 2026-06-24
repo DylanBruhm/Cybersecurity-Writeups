@@ -53,3 +53,7 @@ List of Attack Indicators:
 - Malicious URL: hxxp://bit[.]ly/3sHkX3da12340
 - Destination IP: 45.148.10.131
 
+# Case 2 – Blacklisted URL
+This alert was triggered after a user attempted to access a blacklisted URL. The investigation focused on confirming the URL was malicious, checking the firewall logs, identifying the affected host, and determining whether any further investigation was required.
+
+
