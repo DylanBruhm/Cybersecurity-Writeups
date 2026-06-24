@@ -15,7 +15,7 @@ The first step was verifying the URL in TryDetectThis to see if it was a known m
 <img width="1888" height="942" alt="Screenshot 2026-06-10 181927" src="https://github.com/user-attachments/assets/55bc6fe7-3b18-44c5-9758-43e6082c9d46" />
 
 ## Step 2 – Search for Similar Emails
-Next, I searched Splunk for the sender email address (urgents@amazon.biz) to determine if any other emails had been sent from the same sender. The search returned only one matching event, indicating no additional emails from this sender were found in the environment.
+Next, I searched Splunk for the sender email address urgents[@]amazon[.]biz to determine if any other emails had been sent from the same sender. The search returned only one matching event, indicating no additional emails from this sender were found in the environment.
 
 <img width="1912" height="867" alt="Screenshot 2026-06-10 183717" src="https://github.com/user-attachments/assets/ce4d8cc7-8f23-41ad-a789-8a32b9944e5a" />
 
