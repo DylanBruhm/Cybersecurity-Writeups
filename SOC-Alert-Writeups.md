@@ -23,3 +23,33 @@ Next, I searched Splunk for the sender email address urgents[@]amazon[.]biz to d
 Next, I searched Splunk for the URL to see if there were any firewall events related to the link. The search returned one result showing the connection was blocked by the firewall, preventing access to the malicious URL.
 
 <img width="1911" height="997" alt="Screenshot 2026-06-10 183952" src="https://github.com/user-attachments/assets/81711514-6a32-4cdb-a948-502825108583" />
+
+## Final Report
+Alert Type: Phishing Email
+
+Time of Activity:
+- 06/10/2026 21:48:12 – The phishing email was received by h.harris[@]thetrydaily[.]thm.
+- 06/10/2026 21:49:26 – A connection attempt to the malicious URL was detected and blocked by the firewall.
+
+Affected User:
+h.harris[@]thetrydaily[.]thm
+- Affected Host: 10.20.2.25
+
+Reason for Classifying as True Positive: 
+- The email was confirmed to be a phishing attempt after the URL was identified as malicious using TryDetectThis. Firewall logs also showed a connection attempt to the URL, confirming the email was interacted with.
+
+Reason for Escalating the Alert: 
+- Although the firewall blocked the connection, the alert was escalated to verify the affected host and confirm no files were downloaded or other suspicious activity occurred.
+
+Recommended Actions:
+- Escalate the alert for a follow-up investigation.
+- Check the affected host to make sure no files were downloaded or malicious activity occurred.
+- Remove the phishing email from the user's mailbox.
+- Continue monitoring for any related activity.
+
+List of Attack Indicators:
+- Sender: urgents[@]amazon[.]biz
+- Subject: Your Amazon Package Couldn't Be Delivered – Action Required
+- Malicious URL: hxxp://bit[.]ly/3sHkX3da12340
+- Destination IP: 45.148.10.131
+
