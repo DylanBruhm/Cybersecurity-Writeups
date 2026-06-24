@@ -19,3 +19,7 @@ Next, I searched Splunk for the sender email address urgents[@]amazon[.]biz to d
 
 <img width="1912" height="867" alt="Screenshot 2026-06-10 183717" src="https://github.com/user-attachments/assets/ce4d8cc7-8f23-41ad-a789-8a32b9944e5a" />
 
+## Step 3 – Check Firewall Logs
+Next, I searched Splunk for the URL to see if there were any firewall events related to the link. The search returned one result showing the connection was blocked by the firewall, preventing access to the malicious URL.
+
+<img width="1911" height="997" alt="Screenshot 2026-06-10 183952" src="https://github.com/user-attachments/assets/81711514-6a32-4cdb-a948-502825108583" />
