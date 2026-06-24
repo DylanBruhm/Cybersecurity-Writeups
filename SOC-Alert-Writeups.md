@@ -32,7 +32,7 @@ Time of Activity:
 - 06/10/2026 21:49:26 – A connection attempt to the malicious URL was detected and blocked by the firewall.
 
 Affected User:
-h.harris[@]thetrydaily[.]thm
+- h.harris[@]thetrydaily[.]thm
 - Affected Host: 10.20.2.25
 
 Reason for Classifying as True Positive: 
