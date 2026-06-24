@@ -1,4 +1,4 @@
-# Case 01 - Microsoft Password Reset Phishing Investigation
+# SOC Alert Investigations
 
 ## Overview 
 
