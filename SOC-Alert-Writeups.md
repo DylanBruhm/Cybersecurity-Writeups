@@ -53,7 +53,23 @@ List of Attack Indicators:
 - Malicious URL: hxxp://bit[.]ly/3sHkX3da12340
 - Destination IP: 45.148.10.131
 
-# Case 2 – Blacklisted URL
-This alert was triggered after a user attempted to access a blacklisted URL. The investigation focused on confirming the URL was malicious, checking the firewall logs, identifying the affected host, and determining whether any further investigation was required.
+# Case 2 – False Positive Email
+This alert was triggered because an inbound email contained an external link. The investigation focused on determining whether the email was legitimate or a phishing attempt by verifying the sender, reviewing the email content, and checking for any related activity.
+
+<img width="1471" height="490" alt="Screenshot 2026-06-10 193802" src="https://github.com/user-attachments/assets/7429dccc-fa40-4364-b591-ea258c727920" />
+
+## Step 1 – Verify the Link
+The first step was verifying the URL using TryDetectThis to determine if it was a known malicious link. The results identified the URL as clean, indicating it was not associated with any known malicious activity.
+
+<img width="1890" height="947" alt="Screenshot 2026-06-10 193717" src="https://github.com/user-attachments/assets/49d87715-5459-436c-98b4-563624e4e381" />
+
+## Step 2 – Search for Similar Emails
+I then searched Splunk using the sender email address to see if there were any other similar emails. The search found another email from the same sender that was sent only minutes apart to the same recipient.
+
+<img width="1911" height="1034" alt="chatgpt" src="https://github.com/user-attachments/assets/3a533c0c-beb0-477e-8a54-b1f0fc73a998" />
+
+
+
+
 
 
