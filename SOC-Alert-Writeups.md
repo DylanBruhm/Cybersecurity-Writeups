@@ -10,7 +10,9 @@ The first alert was a suspicious email claiming an Amazon package couldn't be de
 <img width="1897" height="971" alt="Screenshot 2026-06-10 175105" src="https://github.com/user-attachments/assets/9211d393-c4e1-4328-aed4-0617e0fe019d" />
 
 ## Step 1 – Verify the Link
-The first step was verifying the URL in TryDetectThis to see if it was a known malicious link. The results confirmed the URL was malicious, supporting the suspicion that the email was a phishing attempt.
+The first step was checking the URL in TryDetectThis to see if it was a known malicious link. The results identified the URL as clean. I also scanned the sender email address to check if it was associated with any known malicious activity. The sender was also identified as clean.
+
+<img width="1897" height="981" alt="Screenshot 2026-06-10 194112" src="https://github.com/user-attachments/assets/219340a6-0cab-4133-82b6-73a161a7aa87" />
 
 <img width="1888" height="942" alt="Screenshot 2026-06-10 181927" src="https://github.com/user-attachments/assets/55bc6fe7-3b18-44c5-9758-43e6082c9d46" />
 
