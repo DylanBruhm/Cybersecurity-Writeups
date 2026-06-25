@@ -4,7 +4,7 @@
 
 This repository contains 4 SOC alert investigations I completed during cybersecurity training. Each case includes the investigation process, evidence, findings, and recommendations. These write-ups show how I analyze alerts, identify threats, and document the results.
 
-# Case 1 – Phishing Email
+# Case 1 – Amazon Email
 The first alert was a suspicious email claiming an Amazon package couldn't be delivered. The investigation focused on determining whether it was a legitimate email or a phishing attempt, and whether anyone clicked the external link.
 
 <img width="1897" height="971" alt="Screenshot 2026-06-10 175105" src="https://github.com/user-attachments/assets/9211d393-c4e1-4328-aed4-0617e0fe019d" />
@@ -96,7 +96,56 @@ List of Related Entities:
 - h.harris[@]thetrydaily[.]thm 
 - j.carter[@]thetrydaily[.]thm 
 
+# Case 3 – Microsoft Sign-In Email
+This alert was triggered by an inbound email claiming there was unusual sign-in activity on a Microsoft account. The investigation focused on determining whether the email was legitimate or a phishing attempt, and whether the recipient interacted with the link.
 
+<img width="1464" height="576" alt="Screenshot 2026-06-22 180214" src="https://github.com/user-attachments/assets/19952416-4d72-4689-960a-93581d1fa59e" />
 
+# Step 1 – Verify the Sender
+The first step was checking the sender domain in TryDetectThis to see if it was associated with any known malicious activity. The results identified the domain as malicious.
 
+<img width="1866" height="936" alt="Screenshot 2026-06-22 180318" src="https://github.com/user-attachments/assets/090a17d7-b8b2-4c47-92c0-85c85bfc01e9" />
 
+## Step 2 – Check Firewall Logs
+
+Next, I searched Splunk for the URL to check for any related firewall activity. The search returned a firewall event showing that a connection to the URL was allowed.
+
+<img width="1911" height="697" alt="Screenshot 2026-06-22 180456" src="https://github.com/user-attachments/assets/f9047efb-0ecd-4bda-bac1-dcc4a821a8ca" />
+
+## Step 3 – Review Related Activity 
+Next, I searched Splunk for the affected user, destination IP address, and source host to review related activity. The results confirmed the phishing email, the allowed connection to the malicious URL, and the associated firewall activity from the affected host.
+
+<img width="1911" height="966" alt="Screenshot 2026-06-22 181320" src="https://github.com/user-attachments/assets/c17f0b86-4e02-41ce-bf02-0a0f756bf15a" />
+<img width="1909" height="867" alt="Screenshot 2026-06-22 181129" src="https://github.com/user-attachments/assets/62ded48b-ac67-4adf-949f-2fe3310c164d" />
+<img width="1908" height="990" alt="Screenshot 2026-06-22 181018" src="https://github.com/user-attachments/assets/5de29f43-1db4-4c24-a48e-ac0bb0afd0d5" />
+
+## Final Report
+Alert Type: Phishing Email
+
+Classification: True Positive
+
+Time of Activity:
+- 06/22/2026 20:36:52 – The phishing email was received by c.allen[@]thetrydaily[.]thm.
+- 06/22/2026 20:38:01 – A connection to the malicious URL was allowed by the firewall.
+
+Affected User:
+- c.allen[@]thetrydaily[.]thm
+- Affected Host: 10.20.2.25
+
+Reason for Classifying as True Positive:
+- The sender domain was identified as malicious using TryDetectThis. Firewall logs also showed that a connection to the malicious URL was allowed from the affected host.
+
+Reason for Escalating the Alert:
+- The alert was escalated because the connection to the malicious URL was allowed. The affected host should be investigated to determine whether any credentials were compromised or other malicious activity occurred.
+
+Recommended Actions:
+- Escalate the alert for a follow-up investigation.
+- Review the affected host for signs of compromise.
+- Reset the affected user's password if the account may have been compromised.
+- Continue monitoring the affected host for any related malicious activity.
+
+List of Attack Indicators:
+- Sender: no-reply[@]m1crosoftsupport[.]co
+- Subject: Unusual Sign-In Activity on Your Microsoft Account
+- Malicious URL: hxxps://m1crosoftsupport[.]co/login
+- Destination IP: 45.148.10.131
