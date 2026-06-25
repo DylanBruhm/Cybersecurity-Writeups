@@ -10,9 +10,7 @@ The first alert was a suspicious email claiming an Amazon package couldn't be de
 <img width="1897" height="971" alt="Screenshot 2026-06-10 175105" src="https://github.com/user-attachments/assets/9211d393-c4e1-4328-aed4-0617e0fe019d" />
 
 ## Step 1 – Verify the Link
-The first step was checking the URL in TryDetectThis to see if it was a known malicious link. The results identified the URL as clean. I also scanned the sender email address to check if it was associated with any known malicious activity. The sender was also identified as clean.
-
-<img width="1897" height="981" alt="Screenshot 2026-06-10 194112" src="https://github.com/user-attachments/assets/219340a6-0cab-4133-82b6-73a161a7aa87" />
+The first step was checking the URL in TryDetectThis to see if it was a known malicious link. The results confirmed the URL was malicious, supporting the suspicion that the email was a phishing attempt.
 
 <img width="1888" height="942" alt="Screenshot 2026-06-10 181927" src="https://github.com/user-attachments/assets/55bc6fe7-3b18-44c5-9758-43e6082c9d46" />
 
@@ -28,6 +26,8 @@ Next, I searched Splunk for the URL to see if there were any firewall events rel
 
 ## Final Report
 Alert Type: Phishing Email
+
+Classification: True Positive
 
 Time of Activity:
 - 06/10/2026 21:48:12 – The phishing email was received by h.harris[@]thetrydaily[.]thm.
@@ -61,15 +61,40 @@ This alert was triggered because an inbound email contained an external link. Th
 <img width="1471" height="490" alt="Screenshot 2026-06-10 193802" src="https://github.com/user-attachments/assets/7429dccc-fa40-4364-b591-ea258c727920" />
 
 ## Step 1 – Verify the Link
-The first step was verifying the URL using TryDetectThis to determine if it was a known malicious link. The results identified the URL as clean, indicating it was not associated with any known malicious activity.
+The first step was checking the URL in TryDetectThis to see if it was a known malicious link. The results identified the URL as clean. I also scanned the sender email address to check if it was associated with any known malicious activity. The sender was also identified as clean.
 
 <img width="1890" height="947" alt="Screenshot 2026-06-10 193717" src="https://github.com/user-attachments/assets/49d87715-5459-436c-98b4-563624e4e381" />
+
+<img width="1897" height="981" alt="Screenshot 2026-06-10 194112" src="https://github.com/user-attachments/assets/219340a6-0cab-4133-82b6-73a161a7aa87" />
 
 ## Step 2 – Search for Similar Emails
 I then searched Splunk using the sender email address to see if there were any other similar emails. The search found another email from the same sender that was sent only minutes apart to the same recipient.
 
 <img width="1911" height="1034" alt="chatgpt" src="https://github.com/user-attachments/assets/3a533c0c-beb0-477e-8a54-b1f0fc73a998" />
 
+## Step 3 – Review Related Email Activity
+Next, I searched Splunk for hrconnex.thm to review related email activity. The search returned an internal email stating that J. Garcia had not received the original onboarding email and requested that another onboarding email be sent. A follow-up onboarding email to J. Garcia was also found a few minutes later.
+
+<img width="1890" height="898" alt="Screenshot 2026-06-10 195656" src="https://github.com/user-attachments/assets/3c9f4666-c24e-4e00-9c26-332b7aa18e37" />
+
+## Final Report
+Alert Type: Phishing Email
+
+Classification: False Positive
+
+Time of Activity:
+- 06/10/2026 21:44:59 – The original onboarding email was sent to j.garcia[@]thetrydaily[.]thm.
+- 06/10/2026 21:46:32 – An internal email reported that J. Garcia had not received the onboarding email and requested that another one be sent.
+- 06/10/2026 21:50:58 – A follow-up onboarding email was sent to j.garcia[@]thetrydaily[.]thm.
+
+Reason for Classifying as False Positive:
+- The URL and sender were verified using TryDetectThis and both were identified as clean. Additional email activity in Splunk also showed the onboarding email was resent after J. Garcia reported not receiving the original email.
+
+List of Related Entities:
+- j.garcia[@]thetrydaily[.]thm
+- onboarding[@]hrconnex[.]thm 
+- h.harris[@]thetrydaily[.]thm 
+- j.carter[@]thetrydaily[.]thm 
 
 
 
