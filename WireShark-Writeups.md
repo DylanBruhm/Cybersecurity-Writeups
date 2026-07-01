@@ -8,7 +8,7 @@ In this challenge, I used Wireshark to investigate an ARP spoofing attack and id
 <img width="808" height="224" alt="Screenshot 2026-06-25 171640" src="https://github.com/user-attachments/assets/4b852dc8-0b2a-468a-a940-337de22d84c4" />
 
 ## Step 1 find the the Treat actor 
-first I filtered arp requests to see if i could see any anomalies,
+First I filtered arp requests to see if i could see any anomalies,
 This let me view only Address Resolution Protocol packets and look for unusual activity.
 
 <img width="1878" height="841" alt="Screenshot 2026-06-25 170048" src="https://github.com/user-attachments/assets/a06f7eb1-418a-42c1-86bf-3cdf8c7f93a0" />
@@ -48,7 +48,7 @@ There were only 10 HTTP POST packets, so I inspected each one manually to determ
 <img width="817" height="210" alt="Screenshot 2026-06-26 151720" src="https://github.com/user-attachments/assets/f63757e7-9228-4fc7-9d4b-46f57b33aafb" />
 
 ## Step 1 Filter DHCP Traffic
-Search dchp and then filter the name glaxexy A30 and then after serching the packect you can see the host name and the mac address aswell
+I started by filtering for DHCP traffic because DHCP packets can contain information about devices, such as the host name and MAC address.
 
 <img width="1039" height="875" alt="Screenshot 2026-06-26 151747" src="https://github.com/user-attachments/assets/9928912d-200f-44e3-aaa7-3b43174da736" />
 
