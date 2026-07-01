@@ -39,7 +39,9 @@ I started by filtering for HTTP POST requests because HTTP is used for web traff
 <img width="1882" height="897" alt="Screenshot 2026-06-26 110928" src="https://github.com/user-attachments/assets/e89eff24-8556-4a13-a9d8-6358e7764b31" />
 
 ## Step 2 Manually Inspect the HTTP POST Requests
-There were only 10 HTTP POST packets, so I inspected each one manually to determine which requests contained submitted login credentials.
+There were only 10 HTTP POST packets, so I inspected each one manually to determine which requests contained submitted login credentials, which gave me the anwser of 6.
 
 <img width="1889" height="743" alt="Screenshot 2026-06-26 111057" src="https://github.com/user-attachments/assets/4f64e9bf-af71-4354-8b66-a0df7d543cba" />
+
+
 
