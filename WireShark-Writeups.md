@@ -1,4 +1,3 @@
-<img width="817" height="210" alt="Screenshot 2026-06-26 151720" src="https://github.com/user-attachments/assets/f63757e7-9228-4fc7-9d4b-46f57b33aafb" />
 # WireShark
 
 ## Overview
@@ -46,3 +45,5 @@ There were only 10 HTTP POST packets, so I inspected each one manually to determ
 
 
 
+
+<img width="817" height="210" alt="Screenshot 2026-06-26 151720" src="https://github.com/user-attachments/assets/f63757e7-9228-4fc7-9d4b-46f57b33aafb" />
