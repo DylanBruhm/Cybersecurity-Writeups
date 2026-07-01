@@ -8,11 +8,12 @@ In this challenge, I used Wireshark to investigate an ARP spoofing attack and id
 <img width="808" height="224" alt="Screenshot 2026-06-25 171640" src="https://github.com/user-attachments/assets/4b852dc8-0b2a-468a-a940-337de22d84c4" />
 
 ## Step 1 find the the Treat actor 
-first I filtered arp requests to see if i could see any anomalies
+first I filtered arp requests to see if i could see any anomalies,
+This let me view only Address Resolution Protocol packets and look for unusual activity.
 
 <img width="1878" height="841" alt="Screenshot 2026-06-25 170048" src="https://github.com/user-attachments/assets/a06f7eb1-418a-42c1-86bf-3cdf8c7f93a0" />
 
-then we find the mac address
+I noticed one MAC address was sending a large number of ARP requests to many different IP addresses on the network.
 <img width="1912" height="396" alt="Screenshot 2026-06-25 171237" src="https://github.com/user-attachments/assets/b384ed3e-5a78-4aac-aa40-3a6c359a5d66" />
 then we filter 
 
