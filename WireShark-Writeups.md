@@ -21,9 +21,9 @@ I then filtered the traffic to show only ARP requests from that MAC address.
 
 arp.opcode == 1 && arp.src.hw_mac == 00:0c:29:e2:18:b4
 
-arp.opcode == 1 Only ARP requests.
+arp.opcode == 1 Shows only ARP request packets.
 
-arp.src.hw_mac == 00:0c:29:e2:18:b4  Only requests sent by that MAC address.
+arp.src.hw_mac == 00:0c:29:e2:18:b4  Shows only packets sent by that MAC address.
 
 <img width="1915" height="949" alt="Screenshot 2026-06-25 171619" src="https://github.com/user-attachments/assets/7cec9d9d-c5c0-4918-af3c-0f2ee6a2d3d5" />
 
