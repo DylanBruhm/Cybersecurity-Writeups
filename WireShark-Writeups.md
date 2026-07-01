@@ -43,7 +43,6 @@ There were only 10 HTTP POST packets, so I inspected each one manually to determ
 
 <img width="1889" height="743" alt="Screenshot 2026-06-26 111057" src="https://github.com/user-attachments/assets/4f64e9bf-af71-4354-8b66-a0df7d543cba" />
 
-
-
+## Question 3
 
 <img width="817" height="210" alt="Screenshot 2026-06-26 151720" src="https://github.com/user-attachments/assets/f63757e7-9228-4fc7-9d4b-46f57b33aafb" />
