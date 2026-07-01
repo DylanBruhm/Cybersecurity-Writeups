@@ -1,4 +1,20 @@
-# Cybersecurity-Writeups
-TryHackMe and cybersecurity lab write-ups focused on SOC and defensive security concepts. These write-ups show my progress while learning cybersecurity and investigating things like phishing emails, suspicious files, and network activity.
+# Cybersecurity Portfolio
 
-More write-ups and projects will be added over time as I continue learning.
+This repository contains hands-on cybersecurity investigations and write-ups I completed while learning blue team and SOC analyst skills.
+
+## Skills Demonstrated
+
+- Wireshark Packet Analysis
+- Phishing Email Analysis
+- SSH Attack Investigation
+- Network Traffic Analysis
+- Incident Investigation
+- Threat Detection
+- Log Analysis
+
+## Write-Ups
+
+- Wireshark Investigation
+- SOC Alert Investigations
+- Phishing Email Investigation
+- SSH Attack Investigation
