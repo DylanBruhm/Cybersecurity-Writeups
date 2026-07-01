@@ -29,4 +29,5 @@ arp.src.hw_mac == 00:0c:29:e2:18:b4  Shows only packets sent by that MAC address
 
 and then we can see in the bottom right under packets displayed 284 giving us the answer to the first question. 
 
-
+## question 2
+<img width="796" height="160" alt="Screenshot 2026-06-26 111225" src="https://github.com/user-attachments/assets/ff057e94-e049-420f-9fae-daa1cab419e3" />
