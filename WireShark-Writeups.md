@@ -1,7 +1,7 @@
 # WireShark
 
 ## Overview
-In this challenge you got to navigate wireshark to anwser the questions
+In this challenge, I used Wireshark to investigate an ARP spoofing attack and identify the attacker's activity by filtering network traffic and analyzing ARP packets.
 
 ## Question 1
 
