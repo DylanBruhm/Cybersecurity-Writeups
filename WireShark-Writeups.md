@@ -1,7 +1,7 @@
 # WireShark
 
 ## Overview
-In this challenge you got to navigate wireshark to anwer the questions
+In this challenge you got to navigate wireshark to anwser the questions
 
 ## Question 1
 
