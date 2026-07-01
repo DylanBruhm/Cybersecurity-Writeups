@@ -14,8 +14,10 @@ This let me view only Address Resolution Protocol packets and look for unusual a
 <img width="1878" height="841" alt="Screenshot 2026-06-25 170048" src="https://github.com/user-attachments/assets/a06f7eb1-418a-42c1-86bf-3cdf8c7f93a0" />
 
 I noticed one MAC address was sending a large number of ARP requests to many different IP addresses on the network.
+
 <img width="1912" height="396" alt="Screenshot 2026-06-25 171237" src="https://github.com/user-attachments/assets/b384ed3e-5a78-4aac-aa40-3a6c359a5d66" />
-then we filter 
+
+I then filtered the traffic to show only ARP requests from that MAC address.
 
 arp.opcode == 1 && arp.src.hw_mac == 00:0c:29:e2:18:b4
 
