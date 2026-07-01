@@ -29,5 +29,17 @@ arp.src.hw_mac == 00:0c:29:e2:18:b4  Shows only packets sent by that MAC address
 
 and then we can see in the bottom right under packets displayed 284 giving us the answer to the first question. 
 
-## question 2
+## Question 2
+
 <img width="796" height="160" alt="Screenshot 2026-06-26 111225" src="https://github.com/user-attachments/assets/ff057e94-e049-420f-9fae-daa1cab419e3" />
+
+## Step 1 
+I started by filtering for HTTP POST requests because HTTP is used for web traffic, and POST requests are commonly used to send data such as usernames and passwords to a web server.
+
+<img width="1882" height="897" alt="Screenshot 2026-06-26 110928" src="https://github.com/user-attachments/assets/e89eff24-8556-4a13-a9d8-6358e7764b31" />
+
+## Step 2 Manually Inspect the HTTP POST Requests
+There were only 10 HTTP POST packets, so I inspected each one manually to determine which requests contained submitted login credentials.
+
+<img width="1889" height="743" alt="Screenshot 2026-06-26 111057" src="https://github.com/user-attachments/assets/4f64e9bf-af71-4354-8b66-a0df7d543cba" />
+
