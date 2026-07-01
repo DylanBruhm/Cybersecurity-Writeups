@@ -46,3 +46,11 @@ There were only 10 HTTP POST packets, so I inspected each one manually to determ
 ## Question 3
 
 <img width="817" height="210" alt="Screenshot 2026-06-26 151720" src="https://github.com/user-attachments/assets/f63757e7-9228-4fc7-9d4b-46f57b33aafb" />
+
+## Step 1 Filter DHCP Traffic
+Search dchp and then filter the name glaxexy A30 and then after serching the packect you can see the host name and the mac address aswell
+
+<img width="1039" height="875" alt="Screenshot 2026-06-26 151747" src="https://github.com/user-attachments/assets/9928912d-200f-44e3-aaa7-3b43174da736" />
+
+## Step 2 Search and Inspect the Packet
+I then used Ctrl+F to search for "Galaxy-A30", which took me directly to the correct DHCP packet. After opening the packet, I expanded the DHCP options and found the Host Name and Client MAC Address, giving me the information needed to answer the question.
